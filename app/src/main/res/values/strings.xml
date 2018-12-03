@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidRedBlackTree</string>
+    <string name="insertTextView_text">Insert (int)</string>
+    <string name="insertButton_text">INSERT</string>
+    <string name="insertRandomTextView_text">Insert random integers</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="number_of_ints">Number of integers</string>
+    <string name="clear_tree">Clear tree</string>
+</resources>
