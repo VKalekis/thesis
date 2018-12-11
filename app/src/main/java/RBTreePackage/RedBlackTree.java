@@ -137,6 +137,7 @@ public class RedBlackTree<T extends Comparable<T>> extends GenericBST<T> {
 
     public StringBuilder printLevelOrder(){
         outputTree.setLength(0);
+        outputTree.append("Java\n");
         printLevelOrder(root);
         return outputTree;
     }

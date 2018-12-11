@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,13 +23,15 @@ public class MainActivity extends AppCompatActivity {
     private EditText insertEditText;
     private Button insertButton;
 
-    private EditText fromEditText;
-    private EditText toEditText;
+    private EditText minEditText;
+    private EditText maxEditText;
     private EditText integersEditText;
     private Button randomInsertButton;
 
     private StringBuilder outputTree;
     private TextView showTreeTextView;
+
+    private Switch mySwitch;
 
     private Button clearTreeButton;
 
@@ -43,15 +47,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Example of a call to a native method
-        //TextView tv = (TextView) findViewById(R.id.sample_text);
-        //tv.setText(stringFromJNI());insertEditText=findViewById(R.id.insertEditText);
-
         insertEditText=findViewById(R.id.insertEditText);
         insertButton=findViewById(R.id.insertButton);
 
-        fromEditText=findViewById(R.id.fromEditText);
-        toEditText=findViewById(R.id.toEditText);
+        minEditText=findViewById(R.id.minEditText);
+        maxEditText=findViewById(R.id.maxEditText);
         integersEditText=findViewById(R.id.integersEditText);
         randomInsertButton=findViewById(R.id.randomInsertButton);
 
@@ -59,46 +59,81 @@ public class MainActivity extends AppCompatActivity {
 
         clearTreeButton=findViewById(R.id.clearTreeButton);
 
-        insertButton.setOnClickListener(new View.OnClickListener() {
+        mySwitch=findViewById(R.id.switch1);
+        mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                showTreeTextView.setText("");
+                if (isChecked) {
+                    //we go to java
+                    outputTree = RBTree.printLevelOrder();
+                    showTreeTextView.setText(outputTree.toString());
+                }
+                else{
+                    showTreeTextView.setText(RBTreeCpp(0,0,0,0,3));
 
+                }
+            }
+        });
+
+        insertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!insertEditText.getText().toString().equals("")){
-                    int insertValue = Integer.parseInt(insertEditText.getText().toString());
-                    Toast.makeText(MainActivity.this,"Inserting value "+insertValue,Toast.LENGTH_SHORT).show();
 
-                    try  {
-                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                if (!insertEditText.getText().toString().equals("")) {
+                    int insertValue = Integer.parseInt(insertEditText.getText().toString());
+                    Toast.makeText(MainActivity.this, "Inserting value " + insertValue, Toast.LENGTH_SHORT).show();
+
+                    try {
+                        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                         imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                     } catch (Exception e) {
-                        Log.e("TAG","Keyboard closed exception");
+                        Log.e("TAG", "Keyboard closed exception");
 
                     }
 
                     insertEditText.setText("");
-                    RBTree.add(insertValue);
-                    outputTree=RBTree.printLevelOrder();
-                    showTreeTextView.setText(outputTree.toString());
+
+                    if (mySwitch.isChecked()){
+                        RBTree.add(insertValue);
+                        outputTree = RBTree.printLevelOrder();
+                        showTreeTextView.setText(outputTree.toString());
+                    }
+                    else{
+                        showTreeTextView.setText(RBTreeCpp(insertValue,0,0,0,0));
+                    }
                 }
-                else{
-                    Toast.makeText(MainActivity.this,"Empty field, did nothing",Toast.LENGTH_SHORT).show();
+                else {
+                    Toast.makeText(MainActivity.this, "Empty field, did nothing", Toast.LENGTH_SHORT).show();
                 }
+
+
             }
         });
 
         randomInsertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String from=fromEditText.getText().toString();
-                String to=toEditText.getText().toString();
+                String min=minEditText.getText().toString();
+                String max=maxEditText.getText().toString();
                 String integersNumber=integersEditText.getText().toString();
 
-                if (!from.equals("") && !to.equals("") && !integersNumber.equals("")){
-                    addRandom(Integer.parseInt(from),Integer.parseInt(to),Integer.parseInt(integersNumber));
+                if (!min.equals("") && !max.equals("") && !integersNumber.equals("") &&
+                        Integer.parseInt(max)>=Integer.parseInt(min)){
 
-                    fromEditText.onEditorAction(EditorInfo.IME_ACTION_DONE);
-                    fromEditText.getText().clear();
-                    toEditText.getText().clear();
+                    if (mySwitch.isChecked()) {
+                        addRandom(Integer.parseInt(min), Integer.parseInt(max), Integer.parseInt(integersNumber));
+                        outputTree = RBTree.printLevelOrder();
+                        showTreeTextView.setText(outputTree.toString());
+                    }
+                    else{
+                        showTreeTextView.setText(RBTreeCpp(0,Integer.parseInt(min),Integer.parseInt(max)
+                                ,Integer.parseInt(integersNumber),1));
+                    }
+
+                    minEditText.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                    minEditText.getText().clear();
+                    maxEditText.getText().clear();
                     integersEditText.getText().clear();
 
                     try  {
@@ -107,14 +142,10 @@ public class MainActivity extends AppCompatActivity {
                     } catch (Exception e) {
                         Log.e("TAG","Keyboard closed exception");
                     }
-
-                    outputTree=RBTree.printLevelOrder();
-                    showTreeTextView.setText(outputTree.toString());
-
                     Toast.makeText(MainActivity.this,"Added "+integersNumber+" integers",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(MainActivity.this,"Empty field, did nothing",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Empty field or min>max, did nothing",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -122,23 +153,22 @@ public class MainActivity extends AppCompatActivity {
         clearTreeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RBTree=new RedBlackTree<Integer>();
-                showTreeTextView.setText("");
-
+                if (mySwitch.isChecked()) {
+                    RBTree = new RedBlackTree<Integer>();
+                    showTreeTextView.setText("");
+                }
+                else{
+                    showTreeTextView.setText(RBTreeCpp(0,0,0,0,2));
+                }
             }
         });
-
-
-
-
-
     }
 
-    public void addRandom(int from, int to, int integersNumber) {
-        Random rand = new Random();
+    public void addRandom(int min, int max, int integersNumber) {
+
         int i = 0;
         while (i < integersNumber) {
-            int num = ThreadLocalRandom.current().nextInt(from, to + 1);
+            int num = ThreadLocalRandom.current().nextInt(min, max + 1);
             if(RBTree.add(num)!=null){
                 i++;
             }
@@ -146,9 +176,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
+
+    public native String RBTreeCpp(int intInput, int min, int max, int integersNumber, int choice);
 }

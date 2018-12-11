@@ -4,7 +4,11 @@
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_example_bill_androidredblacktree_MainActivity_stringFromJNI(
         JNIEnv *env,
-        jobject /* this */) {
+        jobject /* this */,
+        jstring temp) {
     std::string hello = "Hello from C++";
-    return env->NewStringUTF(hello.c_str());
+    const char *nativeString = env->GetStringUTFChars(temp , 0);
+    return env->NewStringUTF(nativeString);
 }
+
+
