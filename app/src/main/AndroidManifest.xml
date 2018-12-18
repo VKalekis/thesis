@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         LOCAL_LDLIBS := -llog
-        <activity android:name=".BenchmarksActivity">
-        <!--android:parentActivityName=".MainActivity">-->
+        <activity android:name=".BenchmarksActivity"
+        android:parentActivityName=".MainActivity">
 
         </activity>
         <provider
