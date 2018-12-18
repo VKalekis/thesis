@@ -81,6 +81,43 @@ Java_com_example_bill_androidredblacktree_MainActivity_RBTreeCpp(
     return env->NewStringUTF(outputTree.c_str());
 }
 
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_bill_androidredblacktree_BenchmarksActivity_RBTreeCpp(
+        JNIEnv *env,
+        jobject /* this */,
+        jint jmin,
+        jint jmax,
+        jint jintegersNumber,
+        jint jchoice){
+
+
+    int max = jmax;
+    int min = jmin;
+    int integersNumber = jintegersNumber;
+    int choice = jchoice;
+
+    if (choice==1){ //insert random ints between min,max
+        int i = 0;
+        while (i < integersNumber) {
+            int randomInt = random(min,max+1);
+            if(check(root,randomInt)==0){
+                add(randomInt);
+                i++;
+            }
+        }
+    }
+    else if (choice==2){ //delete entire tree
+        deleteTree(&root);
+        root=NULL;
+    }
+
+    return ;
+//    //default: print tree
+//    printLevelOrder(root);
+//
+//    return env->NewStringUTF(outputTree.c_str());
+}
+
 int random(int min, int max) // [min, max)
 {
     static bool first = true;
@@ -124,7 +161,7 @@ int check(pt x, int data){
 }
 
 void addNode(pt *x,int data){
-    puts("Here");
+
     if (root==NULL){
         root=(pt)malloc(sizeof(struct node));
         root->key=data;
@@ -371,14 +408,13 @@ void findSuccessor(pt x){
 void deleteCases(pt *x){
     pt aux=(*x);
     if ((aux==root) && (aux->l==NULL) && (aux->r==NULL)){
-        puts("Del0");
         free(*x);
         root=NULL;
     }
     else if (aux->c=='R'){
 
         if ((aux->l==NULL)&&(aux->r==NULL)){
-            puts("Del1");
+
 
             if (aux==aux->p->l){
                 aux->p->l=NULL;}
@@ -386,7 +422,7 @@ void deleteCases(pt *x){
                 aux->p->r=NULL;
         }
         else if ((aux->l!=NULL)&&(aux->r==NULL)){
-            puts("Del2");
+
             if (aux==aux->p->l)
                 aux->p->l=aux->l;
             else
@@ -394,7 +430,7 @@ void deleteCases(pt *x){
             aux->l->p=aux->p;
         }
         else if ((aux->l==NULL)&&(aux->r!=NULL)){
-            puts("Del3");
+
             if (aux==aux->p->l)
                 aux->p->l=aux->r;
             else
@@ -407,21 +443,21 @@ void deleteCases(pt *x){
     else if (aux->c=='B'){
 
         if ((aux->l!=NULL)&&(aux->r==NULL)&&(aux->l->c=='R')){
-            puts("Del4");
+
             aux->key=aux->l->key;
             pt temp1=aux->l;
             aux->l=NULL;
             free(temp1);
         }
         else if ((aux->r!=NULL)&&(aux->l==NULL)&&(aux->r->c=='R')){
-            puts("Del5");
+
             aux->key=aux->r->key;
             pt temp1=aux->r;
             aux->r=NULL;
             free(temp1);
         }
         else{
-            puts("Del6");
+
             deleteBlack(&aux);
         }
     }

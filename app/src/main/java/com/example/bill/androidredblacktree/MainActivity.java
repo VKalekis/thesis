@@ -1,7 +1,9 @@
 package com.example.bill.androidredblacktree;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Switch mySwitch;
 
     private Button clearTreeButton;
+    private Button benchmarksButton;
 
     RedBlackTree<Integer> RBTree = new RedBlackTree<Integer>();
 
@@ -42,10 +45,16 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("native-lib");
     }
 
+    public native String RBTreeCpp(int intInput, int min, int max, int integersNumber, int choice);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar mToolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("AndroidRedBlackTree");
 
         insertEditText=findViewById(R.id.insertEditText);
         insertButton=findViewById(R.id.insertButton);
@@ -162,10 +171,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        benchmarksButton=findViewById(R.id.benchmarksButton);
+        benchmarksButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BenchmarksActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
-    public void addRandom(int min, int max, int integersNumber) {
-
+    private void addRandom(int min, int max, int integersNumber) {
         int i = 0;
         while (i < integersNumber) {
             int num = ThreadLocalRandom.current().nextInt(min, max + 1);
@@ -176,6 +193,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    public native String RBTreeCpp(int intInput, int min, int max, int integersNumber, int choice);
 }
