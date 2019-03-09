@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        LOCAL_LDLIBS := -llog
+        <!-- LOCAL_LDLIBS := -llog-->
         <activity android:name=".BenchmarksActivity"
-        android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity">
 
         </activity>
         <provider
