@@ -12,11 +12,11 @@ public class GenericBST<T extends Comparable<T>> {
         return root;
     }
 
-    public Node<T> add(T data){
+    public Node<T> add(T data) {
 
-        if (!check(data)){
+        if (!check(data)) {
             Node<T> temp;
-            temp=this.addNode(root,data);
+            temp = this.addNode(root, data);
             return temp;
         }
         return null;

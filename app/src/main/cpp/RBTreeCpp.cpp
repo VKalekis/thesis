@@ -43,7 +43,7 @@ void deleteTree(pt *x);
 string outputTree;
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_bill_androidredblacktree_MainActivity_RBTreeCpp(
+Java_com_example_bill_androidredblacktree_RBTree_RBTreeCpp(
         JNIEnv *env,
         jobject /* this */,
         jint jInput,
@@ -82,7 +82,7 @@ Java_com_example_bill_androidredblacktree_MainActivity_RBTreeCpp(
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_bill_androidredblacktree_BenchmarksActivity_RBTreeCpp(
+Java_com_example_bill_androidredblacktree_RBTreeBenchmarks_RBTreeCpp(
         JNIEnv *env,
         jobject /* this */,
         jint jmin,

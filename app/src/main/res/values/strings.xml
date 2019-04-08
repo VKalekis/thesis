@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidRedBlackTree</string>
+    <string name="app_name">Thesis</string>
     <string name="insertTextView_text">Insert (int)</string>
     <string name="insertButton_text">INSERT</string>
     <string name="insertRandomTextView_text">Insert random integers</string>
@@ -12,4 +12,14 @@
     <string name="nodes_number">Range of number of nodes to be inserted</string>
     <string name="run_benchmarks">Run benchmarks</string>
     <string name="share_button">Share benchmarks</string>
+    <string name="RBTree">Red Black Tree</string>
+    <string name="Quicksort">Quicksort</string>
+    <string name="QuicksortSizeArray">Max size of array to be quicksorted</string>
+    <string name="ArraySize">Array size</string>
+    <string name="pass">Pass array</string>
+    <string name="dontpass">Don\'t pass array</string>
+    <string name="diffEquation">Solving a differential equation</string>
+    <string name="maxPoints">Maximum number of points</string>
+    <string name="C">C</string>
+    <string name="Java">Java</string>
 </resources>

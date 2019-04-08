@@ -2,9 +2,6 @@
 <paths>
 
     <files-path
-        name="benchmarks"
-        path="." />
-    <files-path
         name="quicksort_benchmarks"
         path="." />
 

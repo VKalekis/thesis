@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BenchmarksActivity">
+    tools:context=".RBTreeBenchmarks">
 
     <include
         android:id="@+id/toolbar1"
         layout="@layout/toolbar" />
 
     <EditText
-        android:id="@+id/minEditText1"
+        android:id="@+id/maxEditText"
         style="@android:style/Widget.DeviceDefault.EditText"
         android:layout_width="150dp"
         android:layout_height="40dp"
@@ -27,23 +27,6 @@
         app:layout_constraintTop_toBottomOf="@+id/integersTextView" />
 
     <EditText
-        android:id="@+id/minEditText2"
-        style="@android:style/Widget.DeviceDefault.EditText"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/min"
-        android:inputType="number"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nodesTextView" />
-
-    <EditText
         android:id="@+id/maxEditText1"
         android:layout_width="150dp"
         android:layout_height="40dp"
@@ -56,14 +39,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/minEditText1" />
+        app:layout_constraintTop_toBottomOf="@+id/maxEditText" />
 
     <EditText
         android:id="@+id/maxEditText2"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/max"
@@ -72,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/minEditText2" />
+        tools:layout_editor_absoluteY="353dp" />
 
     <TextView
         android:id="@+id/integersTextView"

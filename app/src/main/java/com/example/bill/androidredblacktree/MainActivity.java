@@ -22,30 +22,18 @@ import RBTreePackage.RedBlackTree;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText insertEditText;
-    private Button insertButton;
+    private Button diffEqButton;
+    private Button RBTreeButton;
+    private Button quicksortButton;
 
-    private EditText minEditText;
-    private EditText maxEditText;
-    private EditText integersEditText;
-    private Button randomInsertButton;
-
-    private StringBuilder outputTree;
-    private TextView showTreeTextView;
-
-    private Switch mySwitch;
-
-    private Button clearTreeButton;
-    private Button benchmarksButton;
-
-    RedBlackTree<Integer> RBTree = new RedBlackTree<Integer>();
+    private TextView RBTreeTextView;
+    private TextView QuicksortTextView;
 
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
     }
 
-    public native String RBTreeCpp(int intInput, int min, int max, int integersNumber, int choice);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,140 +44,36 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("AndroidRedBlackTree");
 
-        insertEditText=findViewById(R.id.insertEditText);
-        insertButton=findViewById(R.id.insertButton);
 
-        minEditText=findViewById(R.id.minEditText);
-        maxEditText=findViewById(R.id.maxEditText);
-        integersEditText=findViewById(R.id.integersEditText);
-        randomInsertButton=findViewById(R.id.randomInsertButton);
+        RBTreeButton = findViewById(R.id.RBTreeButton);
+        quicksortButton = findViewById(R.id.quicksortButton);
+        diffEqButton = findViewById(R.id.diffEqButton);
 
-        showTreeTextView=findViewById(R.id.showTreeTextView);
-
-        clearTreeButton=findViewById(R.id.clearTreeButton);
-
-        mySwitch=findViewById(R.id.switch1);
-        mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                showTreeTextView.setText("");
-                if (isChecked) {
-                    //we go to java
-                    outputTree = RBTree.printLevelOrder();
-                    showTreeTextView.setText(outputTree.toString());
-                }
-                else{
-                    showTreeTextView.setText(RBTreeCpp(0,0,0,0,3));
-
-                }
-            }
-        });
-
-        insertButton.setOnClickListener(new View.OnClickListener() {
+        RBTreeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (!insertEditText.getText().toString().equals("")) {
-                    int insertValue = Integer.parseInt(insertEditText.getText().toString());
-                    Toast.makeText(MainActivity.this, "Inserting value " + insertValue, Toast.LENGTH_SHORT).show();
-
-                    try {
-                        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                    } catch (Exception e) {
-                        Log.e("TAG", "Keyboard closed exception");
-
-                    }
-
-                    insertEditText.setText("");
-
-                    if (mySwitch.isChecked()){
-                        RBTree.add(insertValue);
-                        outputTree = RBTree.printLevelOrder();
-                        showTreeTextView.setText(outputTree.toString());
-                    }
-                    else{
-                        showTreeTextView.setText(RBTreeCpp(insertValue,0,0,0,0));
-                    }
-                }
-                else {
-                    Toast.makeText(MainActivity.this, "Empty field, did nothing", Toast.LENGTH_SHORT).show();
-                }
-
-
-            }
-        });
-
-        randomInsertButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String min=minEditText.getText().toString();
-                String max=maxEditText.getText().toString();
-                String integersNumber=integersEditText.getText().toString();
-
-                if (!min.equals("") && !max.equals("") && !integersNumber.equals("") &&
-                        Integer.parseInt(max)>=Integer.parseInt(min)){
-
-                    if (mySwitch.isChecked()) {
-                        addRandom(Integer.parseInt(min), Integer.parseInt(max), Integer.parseInt(integersNumber));
-                        outputTree = RBTree.printLevelOrder();
-                        showTreeTextView.setText(outputTree.toString());
-                    }
-                    else{
-                        showTreeTextView.setText(RBTreeCpp(0,Integer.parseInt(min),Integer.parseInt(max)
-                                ,Integer.parseInt(integersNumber),1));
-                    }
-
-                    minEditText.onEditorAction(EditorInfo.IME_ACTION_DONE);
-                    minEditText.getText().clear();
-                    maxEditText.getText().clear();
-                    integersEditText.getText().clear();
-
-                    try  {
-                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                    } catch (Exception e) {
-                        Log.e("TAG","Keyboard closed exception");
-                    }
-                    Toast.makeText(MainActivity.this,"Added "+integersNumber+" integers",Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(MainActivity.this,"Empty field or min>max, did nothing",Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        clearTreeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mySwitch.isChecked()) {
-                    RBTree = new RedBlackTree<Integer>();
-                    showTreeTextView.setText("");
-                }
-                else{
-                    showTreeTextView.setText(RBTreeCpp(0,0,0,0,2));
-                }
-            }
-        });
-
-        benchmarksButton=findViewById(R.id.benchmarksButton);
-        benchmarksButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BenchmarksActivity.class);
+                Intent intent = new Intent(MainActivity.this, RBTree.class);
                 startActivity(intent);
             }
         });
-    }
 
-    private void addRandom(int min, int max, int integersNumber) {
-        int i = 0;
-        while (i < integersNumber) {
-            int num = ThreadLocalRandom.current().nextInt(min, max + 1);
-            if(RBTree.add(num)!=null){
-                i++;
+        quicksortButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QuicksortBenchmarks.class);
+                startActivity(intent);
             }
-        }
+        });
+
+        diffEqButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DiffEquationBenchmarks.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 

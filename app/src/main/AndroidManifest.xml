@@ -9,18 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".DiffEquationBenchmarks"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QuicksortBenchmarks"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RBTree"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- LOCAL_LDLIBS := -llog-->
-        <activity android:name=".BenchmarksActivity"
-            android:parentActivityName=".MainActivity">
+        </activity> <!-- LOCAL_LDLIBS := -llog -->
+        <activity
+            android:name=".RBTreeBenchmarks"
+            android:parentActivityName=".MainActivity" />
 
-        </activity>
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.codepath.fileprovider"
@@ -30,9 +38,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/fileprovider" />
         </provider>
-
-
     </application>
-
 
 </manifest>
