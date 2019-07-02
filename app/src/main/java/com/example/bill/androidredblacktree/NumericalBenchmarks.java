@@ -17,6 +17,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.Map;
 
 public class DiffEquationBenchmarks extends AppCompatActivity {
@@ -71,6 +72,10 @@ public class DiffEquationBenchmarks extends AppCompatActivity {
 
                             if (langSwitch.isChecked()){
                                 sb.append("Number of points"+","+"Java"+",\n");
+                                Map<String,String> map =Debug.getRuntimeStats();
+                                for (Map.Entry<String, String> entry : map.entrySet()) {
+                                    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+                                }
                                 for (run = 1; run <= MAXRUNS; run++) {
                                     System.out.println(run);
                                     for (j = 1; (int) Math.pow(2, j) <= Integer.parseInt(maxPoints); j++) {
@@ -99,8 +104,8 @@ public class DiffEquationBenchmarks extends AppCompatActivity {
                                         Log.d("DiffEquation Java ", run + " " + n + " " + estimatedTime);
                                     }
                                 }
-                                Map<String,String> map =Debug.getRuntimeStats();
-                                for (Map.Entry<String, String> entry : map.entrySet()) {
+                                Map<String,String> map1 =Debug.getRuntimeStats();
+                                for (Map.Entry<String, String> entry : map1.entrySet()) {
                                     System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
                                 }
 
