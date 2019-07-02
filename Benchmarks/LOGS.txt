@@ -1,0 +1,492 @@
+
+JavaFloat
+
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.gc-time, Value = 471
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.bytes-allocated, Value = 37195768
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.bytes-freed, Value = 22566624
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,9:3,10:1
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:5
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.gc-count, Value = 43
+06-19 16:24:49.537 30088 30144 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-19 16:24:49.537 30088 30144 I System.out: 13409288
+06-19 16:24:49.537 30088 30144 I System.out: 18874368
+06-19 16:24:49.537 30088 30144 I System.out: 5465080
+
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.gc-time, Value = 958
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.bytes-allocated, Value = 54411720
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.bytes-freed, Value = 44283328
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:2,6:1,7:1,9:5,10:2
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:10,1:1
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.gc-count, Value = 87
+06-19 16:25:36.133 30088 30144 I System.out: Key = art.gc.blocking-gc-time, Value = 16
+06-19 16:25:36.133 30088 30144 I System.out: 13351912
+06-19 16:25:36.134 30088 30144 I System.out: 18874368
+06-19 16:25:36.134 30088 30144 I System.out: 5522456
+
+
+C Float
+
+06-25 13:47:33.603  3311  3367 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-25 13:47:33.603  3311  3367 I System.out: Key = art.gc.gc-time, Value = 487
+06-25 13:47:33.603  3311  3367 I System.out: Key = art.gc.bytes-allocated, Value = 49273880
+06-25 13:47:33.603  3311  3367 I System.out: Key = art.gc.bytes-freed, Value = 34942576
+06-25 13:47:33.604  3311  3367 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 1:1,5:1,15:1,16:1
+06-25 13:47:33.604  3311  3367 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:4
+06-25 13:47:33.604  3311  3367 I System.out: Key = art.gc.gc-count, Value = 44
+06-25 13:47:33.604  3311  3367 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-25 13:47:33.604  3311  3367 I System.out: 13859792
+06-25 13:47:33.604  3311  3367 I System.out: 18874368
+06-25 13:47:33.604  3311  3367 I System.out: 5014448
+
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.gc-time, Value = 976
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.bytes-allocated, Value = 64847304
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.bytes-freed, Value = 56125248
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:2,1:1,5:1,7:1,14:1,15:1,16:2
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:9
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.gc-count, Value = 88
+06-25 13:48:02.073  3311  3367 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-25 13:48:02.073  3311  3367 I System.out: 13886568
+06-25 13:48:02.073  3311  3367 I System.out: 18874368
+06-25 13:48:02.073  3311  3367 I System.out: 4987800
+
+
+Java Double
+
+06-19 16:31:36.605 30406 30474 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 16:31:36.605 30406 30474 I System.out: Key = art.gc.gc-time, Value = 963
+06-19 16:31:36.605 30406 30474 I System.out: Key = art.gc.bytes-allocated, Value = 27058264
+06-19 16:31:36.606 30406 30474 I System.out: Key = art.gc.bytes-freed, Value = 24755328
+06-19 16:31:36.606 30406 30474 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,6:1,17:1,18:3
+06-19 16:31:36.606 30406 30474 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:6
+06-19 16:31:36.606 30406 30474 I System.out: Key = art.gc.gc-count, Value = 85
+06-19 16:31:36.606 30406 30474 I System.out: Key = art.gc.blocking-gc-time, Value = 33
+06-19 16:31:36.606 30406 30474 I System.out: 14057120
+06-19 16:31:36.606 30406 30474 I System.out: 18874368
+06-19 16:31:36.606 30406 30474 I System.out: 4817248
+
+
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.gc-time, Value = 1878
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.bytes-allocated, Value = 60101112
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.bytes-freed, Value = 47166088
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,6:1,8:1,17:3,18:5
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:10,1:1
+06-19 16:32:24.318 30406 30474 I System.out: Key = art.gc.gc-count, Value = 168
+06-19 16:32:24.319 30406 30474 I System.out: Key = art.gc.blocking-gc-time, Value = 33
+06-19 16:32:24.319 30406 30474 I System.out: 14020136
+06-19 16:32:24.319 30406 30474 I System.out: 18874368
+06-19 16:32:24.319 30406 30474 I System.out: 4854232
+
+
+C Double
+
+06-19 16:33:39.462 30528 30582 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.gc-time, Value = 1057
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.bytes-allocated, Value = 26697864
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.bytes-freed, Value = 24400416
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:2,23:1,29:1,31:1
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:5
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.gc-count, Value = 84
+06-19 16:33:39.463 30528 30582 I System.out: Key = art.gc.blocking-gc-time, Value = 36
+06-19 16:33:39.463 30528 30582 I System.out: 13289560
+06-19 16:33:39.464 30528 30582 I System.out: 16777216
+06-19 16:33:39.464 30528 30582 I System.out: 3487656
+
+06-19 16:34:07.143 30528 30582 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 16:34:07.143 30528 30582 I System.out: Key = art.gc.gc-time, Value = 2064
+06-19 16:34:07.144 30528 30582 I System.out: Key = art.gc.bytes-allocated, Value = 56525352
+06-19 16:34:07.144 30528 30582 I System.out: Key = art.gc.bytes-freed, Value = 46303240
+06-19 16:34:07.144 30528 30582 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:2,22:1,23:1,29:1,30:1,31:2
+06-19 16:34:07.144 30528 30582 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:7,1:1
+06-19 16:34:07.144 30528 30582 I System.out: Key = art.gc.gc-count, Value = 167
+06-19 16:34:07.144 30528 30582 I System.out: Key = art.gc.blocking-gc-time, Value = 36
+06-19 16:34:07.144 30528 30582 I System.out: 13223424
+06-19 16:34:07.144 30528 30582 I System.out: 16777216
+06-19 16:34:07.144 30528 30582 I System.out: 3553792
+
+
+C NoPass
+
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.gc-time, Value = 49
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.bytes-allocated, Value = 8627624
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.bytes-freed, Value = 6266136
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:4
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.gc-count, Value = 1
+06-19 19:10:34.468  4013  4065 I System.out: Key = art.gc.blocking-gc-time, Value = 49
+06-19 19:10:34.469  4013  4065 I System.out: 13126136
+06-19 19:10:34.469  4013  4065 I System.out: 16777216
+06-19 19:10:34.469  4013  4065 I System.out: 3651080
+
+06-19 19:10:48.538  4013  4065 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:10:48.538  4013  4065 I System.out: Key = art.gc.gc-time, Value = 49
+06-19 19:10:48.538  4013  4065 I System.out: Key = art.gc.bytes-allocated, Value = 12760872
+06-19 19:10:48.538  4013  4065 I System.out: Key = art.gc.bytes-freed, Value = 6266136
+06-19 19:10:48.539  4013  4065 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4
+06-19 19:10:48.539  4013  4065 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:4
+06-19 19:10:48.539  4013  4065 I System.out: Key = art.gc.gc-count, Value = 1
+06-19 19:10:48.539  4013  4065 I System.out: Key = art.gc.blocking-gc-time, Value = 49
+06-19 19:10:48.539  4013  4065 I System.out: 13163544
+06-19 19:10:48.539  4013  4065 I System.out: 16777216
+06-19 19:10:48.539  4013  4065 I System.out: 3613672
+
+
+Java NoPass
+
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.gc-time, Value = 535
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.bytes-allocated, Value = 26944888
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.bytes-freed, Value = 24617328
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,9:1,15:2
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:4
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.gc-count, Value = 45
+06-19 19:08:40.157  3894  3967 I System.out: Key = art.gc.blocking-gc-time, Value = 32
+06-19 19:08:40.157  3894  3967 I System.out: 13197528
+06-19 19:08:40.157  3894  3967 I System.out: 16777216
+06-19 19:08:40.157  3894  3967 I System.out: 3579688
+
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.gc-time, Value = 1026
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.bytes-allocated, Value = 56219416
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.bytes-freed, Value = 45537672
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,6:1,9:1,15:4
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:6,1:1
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.gc-count, Value = 88
+06-19 19:09:09.533  3894  3967 I System.out: Key = art.gc.blocking-gc-time, Value = 32
+06-19 19:09:09.533  3894  3967 I System.out: 13202600
+06-19 19:09:09.533  3894  3967 I System.out: 16777216
+06-19 19:09:09.533  3894  3967 I System.out: 3574616
+
+
+J Pass
+
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.gc-time, Value = 530
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.bytes-allocated, Value = 26994120
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.bytes-freed, Value = 24662456
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,6:1,8:1,15:2
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:5
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.gc-count, Value = 45
+06-19 19:14:08.564  4153  4213 I System.out: Key = art.gc.blocking-gc-time, Value = 47
+06-19 19:14:08.564  4153  4213 I System.out: 13172864
+06-19 19:14:08.564  4153  4213 I System.out: 16777216
+06-19 19:14:08.565  4153  4213 I System.out: 3604352
+
+
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.gc-time, Value = 1011
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.bytes-allocated, Value = 56334184
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.bytes-freed, Value = 45668432
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,4:1,6:1,8:1,14:1,15:3
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:7,1:1
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.gc-count, Value = 88
+06-19 19:14:37.958  4153  4213 I System.out: Key = art.gc.blocking-gc-time, Value = 47
+06-19 19:14:37.958  4153  4213 I System.out: 13174192
+06-19 19:14:37.958  4153  4213 I System.out: 16777216
+06-19 19:14:37.958  4153  4213 I System.out: 3603024
+
+
+C Pass
+
+06-19 19:15:58.949  4257  4359 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:15:58.949  4257  4359 I System.out: Key = art.gc.gc-time, Value = 550
+06-19 19:15:58.950  4257  4359 I System.out: Key = art.gc.bytes-allocated, Value = 27043336
+06-19 19:15:58.950  4257  4359 I System.out: Key = art.gc.bytes-freed, Value = 24707640
+06-19 19:15:58.950  4257  4359 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,15:1,29:1
+06-19 19:15:58.950  4257  4359 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:6
+06-19 19:15:58.950  4257  4359 I System.out: Key = art.gc.gc-count, Value = 45
+06-19 19:15:58.950  4257  4359 I System.out: Key = art.gc.blocking-gc-time, Value = 35
+06-19 19:15:58.950  4257  4359 I System.out: 13243520
+06-19 19:15:58.950  4257  4359 I System.out: 18874368
+06-19 19:15:58.950  4257  4359 I System.out: 5630848
+
+06-19 19:16:14.057  4257  4359 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-19 19:16:14.057  4257  4359 I System.out: Key = art.gc.gc-time, Value = 1041
+06-19 19:16:14.057  4257  4359 I System.out: Key = art.gc.bytes-allocated, Value = 55891880
+06-19 19:16:14.057  4257  4359 I System.out: Key = art.gc.bytes-freed, Value = 45635344
+06-19 19:16:14.057  4257  4359 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,5:1,15:1,29:2
+06-19 19:16:14.058  4257  4359 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:7,1:1
+06-19 19:16:14.058  4257  4359 I System.out: Key = art.gc.gc-count, Value = 88
+06-19 19:16:14.058  4257  4359 I System.out: Key = art.gc.blocking-gc-time, Value = 35
+06-19 19:16:14.058  4257  4359 I System.out: 13256256
+06-19 19:16:14.058  4257  4359 I System.out: 18874368
+06-19 19:16:14.058  4257  4359 I System.out: 5618112
+
+
+Java Int 200000
+
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.blocking-gc-count, Value = 3
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.gc-time, Value = 14765
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.bytes-allocated, Value = 6603691256
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.bytes-freed, Value = 6601071080
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,3:1,24:1,29:6,30:7,39:1,76:1,84:2
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:18,1:2
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.gc-count, Value = 695
+06-23 17:30:17.353  6260  6376 I System.out: Key = art.gc.blocking-gc-time, Value = 97
+06-23 17:30:17.353  6260  6376 I System.out: 14648888
+06-23 17:30:17.353  6260  6376 I System.out: 18874368
+06-23 17:30:17.353  6260  6376 I System.out: 4225480
+
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.blocking-gc-count, Value = 3
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.gc-time, Value = 25640
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.bytes-allocated, Value = 13196766104
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.bytes-freed, Value = 13181772432
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,3:1,11:1,24:1,29:14,30:16,39:1,76:1,84:2
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:35,1:3
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.gc-count, Value = 1218
+06-23 17:33:14.755  6260  6376 I System.out: Key = art.gc.blocking-gc-time, Value = 97
+06-23 17:33:14.755  6260  6376 I System.out: 14432920
+06-23 17:33:14.755  6260  6376 I System.out: 18874368
+06-23 17:33:14.755  6260  6376 I System.out: 4441448
+		
+
+C Int 200000
+
+06-23 17:25:11.801  6018  6216 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-23 17:25:11.801  6018  6216 I System.out: Key = art.gc.gc-time, Value = 60
+06-23 17:25:11.801  6018  6216 I System.out: Key = art.gc.bytes-allocated, Value = 8589272
+06-23 17:25:11.801  6018  6216 I System.out: Key = art.gc.bytes-freed, Value = 5516824
+06-23 17:25:11.801  6018  6216 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:12
+06-23 17:25:11.801  6018  6216 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:12
+06-23 17:25:11.802  6018  6216 I System.out: Key = art.gc.gc-count, Value = 1
+06-23 17:25:11.802  6018  6216 I System.out: Key = art.gc.blocking-gc-time, Value = 60
+06-23 17:25:11.803  6018  6216 I System.out: 15731304
+06-23 17:25:11.803  6018  6216 I System.out: 23068672
+06-23 17:25:11.803  6018  6216 I System.out: 7337368
+
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.gc-time, Value = 60
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.bytes-allocated, Value = 12738936
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.bytes-freed, Value = 5516824
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:12
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:12
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.gc-count, Value = 1
+06-23 17:26:36.870  6018  6216 I System.out: Key = art.gc.blocking-gc-time, Value = 60
+06-23 17:26:36.870  6018  6216 I System.out: 15493832
+06-23 17:26:36.870  6018  6216 I System.out: 23068672
+06-23 17:26:36.870  6018  6216 I System.out: 7574840
+
+
+Java Classes
+
+06-23 17:55:20.349  6732  6921 I System.out: Key = art.gc.blocking-gc-count, Value = 2
+06-23 17:55:20.349  6732  6921 I System.out: Key = art.gc.gc-time, Value = 45462
+06-23 17:55:20.349  6732  6921 I System.out: Key = art.gc.bytes-allocated, Value = 17636124280
+06-23 17:55:20.349  6732  6921 I System.out: Key = art.gc.bytes-freed, Value = 17633497816
+06-23 17:55:20.349  6732  6921 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,22:1,37:4,38:19,56:1,58:1,77:1,99:1,100:7,101:1,102:1
+06-23 17:55:20.350  6732  6921 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:37,1:1
+06-23 17:55:20.350  6732  6921 I System.out: Key = art.gc.gc-count, Value = 2086
+06-23 17:55:20.350  6732  6921 I System.out: Key = art.gc.blocking-gc-time, Value = 41
+06-23 17:55:20.351  6732  6921 I System.out: 14707976
+06-23 17:55:20.351  6732  6921 I System.out: 18874368
+06-23 17:55:20.351  6732  6921 I System.out: 4166392
+
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.blocking-gc-count, Value = 2
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.gc-time, Value = 72647
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.bytes-allocated, Value = 35244407768
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.bytes-freed, Value = 35235511992
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,21:1,22:1,37:9,38:48,56:1,58:1,77:1,99:1,100:7,101:1,102:1
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:71,1:2
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.gc-count, Value = 3419
+06-23 18:01:12.658  6732  6921 I System.out: Key = art.gc.blocking-gc-time, Value = 41
+06-23 18:01:12.658  6732  6921 I System.out: 14333640
+06-23 18:01:12.658  6732  6921 I System.out: 18874368
+06-23 18:01:12.658  6732  6921 I System.out: 4540728
+
+
+C Classes
+
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.gc-time, Value = 0
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.bytes-allocated, Value = 12909208
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.bytes-freed, Value = 0
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.gc-count, Value = 0
+06-24 23:48:49.327 30431 30473 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-24 23:48:49.328 30431 30473 I System.out: 14369280
+06-24 23:48:49.329 30431 30473 I System.out: 18874368
+06-24 23:48:49.329 30431 30473 I System.out: 4505088
+
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.blocking-gc-count, Value = 2
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.gc-time, Value = 40135
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.bytes-allocated, Value = 13455562240
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.bytes-freed, Value = 13446407592
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:2,19:9,20:3,40:1,51:5,52:30,53:4
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:52,1:2
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.gc-count, Value = 2318
+06-24 23:57:32.795 30431 30473 I System.out: Key = art.gc.blocking-gc-time, Value = 24
+06-24 23:57:32.796 30431 30473 I System.out: 14367384
+06-24 23:57:32.796 30431 30473 I System.out: 23068672
+06-24 23:57:32.796 30431 30473 I System.out: 8701288
+
+
+Java Int 70000
+
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.gc-time, Value = 35405
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.bytes-allocated, Value = 8604177928
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.bytes-freed, Value = 8596780336
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:2,1:1,18:1,24:10,25:1,46:1,68:2,69:12,70:2
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:31,1:1
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.gc-count, Value = 1456
+06-24 00:34:43.501  3113  3248 I System.out: Key = art.gc.blocking-gc-time, Value = 42
+06-24 00:34:43.502  3113  3248 I System.out: 14572696
+06-24 00:34:43.502  3113  3248 I System.out: 18874368
+06-24 00:34:43.503  3113  3248 I System.out: 4301672
+
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.blocking-gc-count, Value = 2
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.gc-time, Value = 68890
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.bytes-allocated, Value = 17186842840
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.bytes-freed, Value = 17175732144
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,1:1,6:1,18:1,22:1,24:23,25:1,46:1,60:1,68:5,69:22,70:3
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:62,1:2
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.gc-count, Value = 2816
+06-24 00:39:33.517  3113  3248 I System.out: Key = art.gc.blocking-gc-time, Value = 85
+06-24 00:39:33.517  3113  3248 I System.out: 14415464
+06-24 00:39:33.517  3113  3248 I System.out: 18874368
+06-24 00:39:33.517  3113  3248 I System.out: 4458904
+
+
+C Int 70000
+
+06-24 00:46:19.954  4846  4977 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-24 00:46:19.954  4846  4977 I System.out: Key = art.gc.gc-time, Value = 0
+06-24 00:46:19.954  4846  4977 I System.out: Key = art.gc.bytes-allocated, Value = 10859992
+06-24 00:46:19.954  4846  4977 I System.out: Key = art.gc.bytes-freed, Value = 0
+06-24 00:46:19.954  4846  4977 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 
+06-24 00:46:19.954  4846  4977 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 
+06-24 00:46:19.955  4846  4977 I System.out: Key = art.gc.gc-count, Value = 0
+06-24 00:46:19.955  4846  4977 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-24 00:46:19.956  4846  4977 I System.out: 15385536
+06-24 00:46:19.956  4846  4977 I System.out: 23068672
+06-24 00:46:19.957  4846  4977 I System.out: 7683136
+
+
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.gc-time, Value = 14
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.bytes-allocated, Value = 12322648
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.bytes-freed, Value = 7971320
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:22
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:22
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.gc-count, Value = 1
+06-24 00:48:16.554  4846  4977 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-24 00:48:16.554  4846  4977 I System.out: 15161432
+06-24 00:48:16.554  4846  4977 I System.out: 23068672
+06-24 00:48:16.555  4846  4977 I System.out: 7907240
+
+
+C Hashes
+
+06-23 20:45:03.542 20100 20163 I System.out: Key = art.gc.blocking-gc-count, Value = 0
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.gc-time, Value = 2239
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.bytes-allocated, Value = 424401704
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.bytes-freed, Value = 416617632
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:1,28:1,33:1,34:2,35:1
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:6
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.gc-count, Value = 185
+06-23 20:45:03.543 20100 20163 I System.out: Key = art.gc.blocking-gc-time, Value = 0
+06-23 20:45:03.543 20100 20163 I System.out: 12898696
+06-23 20:45:03.543 20100 20163 I System.out: 16777216
+06-23 20:45:03.543 20100 20163 I System.out: 3878520
+
+06-23 20:45:03.619 20100 20115 I oidredblacktre: Explicit concurrent copying GC freed 4728(1137KB) AllocSpace objects, 99(5MB) LOS objects, 83% free, 2MB/14MB, paused 56us total 11.276ms
+
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.gc-time, Value = 2972
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.bytes-allocated, Value = 564440376
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.bytes-freed, Value = 553997160
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:5,4:1,21:1,28:1,33:1,34:2,35:2
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:12,1:1
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.gc-count, Value = 247
+06-23 20:45:21.111 20100 20163 I System.out: Key = art.gc.blocking-gc-time, Value = 11
+06-23 20:45:21.111 20100 20163 I System.out: 13252160
+06-23 20:45:21.111 20100 20163 I System.out: 16777216
+06-23 20:45:21.111 20100 20163 I System.out: 3525056
+
+06-23 20:45:21.686 20100 20115 I oidredblacktre: Explicit concurrent copying GC freed 3165(1133KB) AllocSpace objects, 106(5MB) LOS objects, 79% free, 3MB/15MB, paused 44us total 11.081ms
+
+06-23 20:45:39.327 20100 20163 I System.out: Key = art.gc.blocking-gc-count, Value = 2
+06-23 20:45:39.327 20100 20163 I System.out: Key = art.gc.gc-time, Value = 3711
+06-23 20:45:39.327 20100 20163 I System.out: Key = art.gc.bytes-allocated, Value = 702893432
+06-23 20:45:39.328 20100 20163 I System.out: Key = art.gc.bytes-freed, Value = 691389336
+06-23 20:45:39.328 20100 20163 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:5,4:1,21:1,28:1,33:2,34:2,35:2,36:1
+06-23 20:45:39.328 20100 20163 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:13,1:2
+06-23 20:45:39.328 20100 20163 I System.out: Key = art.gc.gc-count, Value = 309
+06-23 20:45:39.328 20100 20163 I System.out: Key = art.gc.blocking-gc-time, Value = 22
+06-23 20:45:39.328 20100 20163 I System.out: 13372064
+06-23 20:45:39.328 20100 20163 I System.out: 16777216
+06-23 20:45:39.328 20100 20163 I System.out: 34051521
+
+06-23 20:45:39.931 20100 20115 I oidredblacktre: Explicit concurrent copying GC freed 3173(1400KB) AllocSpace objects, 135(6MB) LOS objects, 79% free, 3MB/15MB, paused 46us total 11.969ms
+
+06-23 20:45:57.933 20100 20163 I System.out: Key = art.gc.blocking-gc-count, Value = 3
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.gc-time, Value = 4477
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.bytes-allocated, Value = 839490968
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.bytes-freed, Value = 829154216
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:5,4:1,21:1,28:1,33:3,34:3,35:2,36:1
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:14,1:3
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.gc-count, Value = 371
+06-23 20:45:57.934 20100 20163 I System.out: Key = art.gc.blocking-gc-time, Value = 34
+06-23 20:45:57.934 20100 20163 I System.out: 13391104
+06-23 20:45:57.934 20100 20163 I System.out: 16777216
+06-23 20:45:57.934 20100 20163 I System.out: 3386112
+
+
+Java Hashes
+
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.gc-time, Value = 3411
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.bytes-allocated, Value = 1353722952
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.bytes-freed, Value = 1351388576
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,16:1,24:1,46:1,48:1,49:1,51:1,53:1
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:11
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.gc-count, Value = 288
+06-23 20:54:10.950 20350 20421 I System.out: Key = art.gc.blocking-gc-time, Value = 35
+06-23 20:54:10.950 20350 20421 I System.out: 14056480
+06-23 20:54:10.950 20350 20421 I System.out: 20971520
+06-23 20:54:10.950 20350 20421 I System.out: 6915040
+
+06-23 20:54:29.942 20350 20421 I System.out: Key = art.gc.blocking-gc-count, Value = 1
+06-23 20:54:29.942 20350 20421 I System.out: Key = art.gc.gc-time, Value = 4489
+06-23 20:54:29.942 20350 20421 I System.out: Key = art.gc.bytes-allocated, Value = 1725103576
+06-23 20:54:29.943 20350 20421 I System.out: Key = art.gc.bytes-freed, Value = 1709970040
+06-23 20:54:29.943 20350 20421 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,16:1,18:1,24:1,46:1,47:1,48:1,49:1,51:1,53:1
+06-23 20:54:29.943 20350 20421 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:12,1:1
+06-23 20:54:29.943 20350 20421 I System.out: Key = art.gc.gc-count, Value = 376
+06-23 20:54:29.943 20350 20421 I System.out: Key = art.gc.blocking-gc-time, Value = 35
+06-23 20:54:29.943 20350 20421 I System.out: 14104128
+06-23 20:54:29.943 20350 20421 I System.out: 20971520
+06-23 20:54:29.943 20350 20421 I System.out: 6867392
+
+06-23 20:54:30.596 20350 20365 I oidredblacktre: Explicit concurrent copying GC freed 13126(577KB) AllocSpace objects, 25(1056KB) LOS objects, 80% free, 2MB/14MB, paused 44us total 10.304ms
+
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.blocking-gc-count, Value = 2
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.gc-time, Value = 5633
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.bytes-allocated, Value = 2138353176
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.bytes-freed, Value = 2124565216
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,16:1,18:1,24:1,46:1,47:1,48:2,49:2,51:1,53:1
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:13,1:2
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.gc-count, Value = 470
+06-23 20:54:49.003 20350 20421 I System.out: Key = art.gc.blocking-gc-time, Value = 46
+06-23 20:54:49.003 20350 20421 I System.out: 14109608
+06-23 20:54:49.003 20350 20421 I System.out: 20971520
+06-23 20:54:49.003 20350 20421 I System.out: 6861912
+
+06-23 20:54:49.296 20350 20365 I oidredblacktre: Explicit concurrent copying GC freed 54598(2003KB) AllocSpace objects, 61(2MB) LOS objects, 77% free, 3MB/15MB, paused 45us total 11.021ms
+
+06-23 20:55:08.841 20350 20421 I System.out: Key = art.gc.blocking-gc-count, Value = 3
+06-23 20:55:08.841 20350 20421 I System.out: Key = art.gc.gc-time, Value = 6901
+06-23 20:55:08.841 20350 20421 I System.out: Key = art.gc.bytes-allocated, Value = 2699480696
+06-23 20:55:08.842 20350 20421 I System.out: Key = art.gc.bytes-freed, Value = 2695102248
+06-23 20:55:08.842 20350 20421 I System.out: Key = art.gc.gc-count-rate-histogram, Value = 0:4,16:1,18:1,24:1,46:1,47:1,48:2,49:2,51:1,52:1,53:2
+06-23 20:55:08.842 20350 20421 I System.out: Key = art.gc.blocking-gc-count-rate-histogram, Value = 0:14,1:3
+06-23 20:55:08.842 20350 20421 I System.out: Key = art.gc.gc-count, Value = 576
+06-23 20:55:08.842 20350 20421 I System.out: Key = art.gc.blocking-gc-time, Value = 57
+06-23 20:55:08.842 20350 20421 I System.out: 14050992
+06-23 20:55:08.842 20350 20421 I System.out: 20971520
+06-23 20:55:08.842 20350 20421 I System.out: 6920528
